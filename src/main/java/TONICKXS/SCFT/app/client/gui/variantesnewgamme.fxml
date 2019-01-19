@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="parent" prefHeight="821.0" prefWidth="1201.0" style="-fx-background-color: FCFCE5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TONICKXS.SCFT.app.client.gui.VarianteGammeController">
+   <children>
+      <ImageView fitHeight="821.0" fitWidth="1201.0" opacity="0.69" pickOnBounds="true">
+         <image>
+            <Image url="@../images/clothes-hanging-background.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="138.0" prefHeight="683.0" prefWidth="1201.0" style="-fx-background-color: FCFCE5;">
+         <children>
+            <AnchorPane layoutX="1019.0" layoutY="42.0" prefHeight="157.0" prefWidth="161.0" style="-fx-border-color: black;">
+               <children>
+                  <JFXTextField fx:id="TotalTime" layoutX="17.0" layoutY="79.0" prefHeight="31.0" prefWidth="132.0" />
+                  <Text layoutX="15.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temps Total" wrappingWidth="131.9326171875">
+                     <font>
+                        <Font name="Berlin Sans FB" size="25.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="eng" layoutX="1049.0" layoutY="601.0" onAction="#Validate" prefHeight="39.0" prefWidth="126.0" style="-fx-background-color: #86c6ff;" text="Enregistrer">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="24.0" layoutY="20.0" prefHeight="646.0" prefWidth="988.0" style="-fx-border-color: black;">
+               <children>
+                  <Rectangle fx:id="R2" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="146.0" layoutX="50.0" layoutY="235.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="181.0">
+                     <effect>
+                        <Shadow color="#dd0000" height="255.0" radius="120.5875" width="229.35" />
+                     </effect>
+                  </Rectangle>
+                  <Rectangle fx:id="R1" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="146.0" layoutX="50.0" layoutY="23.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="181.0">
+                     <effect>
+                        <Shadow color="#dd0000" height="255.0" radius="120.5875" width="229.35" />
+                     </effect>
+                  </Rectangle>
+                  <Rectangle fx:id="R3" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="146.0" layoutX="50.0" layoutY="452.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="188.0">
+                     <effect>
+                        <Shadow color="#dd0000" height="255.0" radius="120.5875" width="229.35" />
+                     </effect>
+                  </Rectangle>
+                  <TableView fx:id="V1_L1" layoutX="285.0" layoutY="7.0" prefHeight="196.0" prefWidth="672.0">
+                     <columns>
+                        <TableColumn fx:id="operation1" prefWidth="415.0" text="Opération" />
+                        <TableColumn fx:id="machine1" prefWidth="141.0" text="Machine" />
+                        <TableColumn fx:id="time1" prefWidth="115.0" text="Temps" />
+                     </columns>
+                  </TableView>
+                  <TableView fx:id="V2_L2" layoutX="285.0" layoutY="217.0" prefHeight="196.0" prefWidth="672.0">
+                     <columns>
+                        <TableColumn fx:id="operation2" prefWidth="417.0" text="Opération" />
+                        <TableColumn fx:id="machine2" prefWidth="134.0" text="Machine" />
+                        <TableColumn fx:id="time2" prefWidth="118.0" text="Temps" />
+                     </columns>
+                  </TableView>
+                  <TableView fx:id="V3_L3" layoutX="285.0" layoutY="440.0" prefHeight="196.0" prefWidth="672.0">
+                     <columns>
+                        <TableColumn fx:id="operation3" prefWidth="409.0" text="Opération" />
+                        <TableColumn fx:id="machine3" prefWidth="142.0" text="Machine" />
+                        <TableColumn fx:id="time3" prefWidth="120.0" text="Temps" />
+                     </columns>
+                  </TableView>
+                  <ImageView fx:id="V1" fitHeight="146.0" fitWidth="188.0" layoutX="47.0" layoutY="23.0" onMouseClicked="#V1action" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="V2" fitHeight="146.0" fitWidth="188.0" layoutX="46.0" layoutY="225.0" onMouseClicked="#V2action" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="V3" fitHeight="146.0" fitWidth="188.0" layoutX="50.0" layoutY="452.0" onMouseClicked="#V3action" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="suiv" fitHeight="39.0" fitWidth="49.0" layoutX="932.0" layoutY="586.0" onMouseClicked="#desc" pickOnBounds="true" preserveRatio="true" rotate="-91.5" visible="false">
+                     <image>
+                        <Image url="@../images/precedent.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="prec" fitHeight="39.0" fitWidth="49.0" layoutX="937.0" layoutY="14.0" nodeOrientation="INHERIT" onMouseClicked="#asc" pickOnBounds="true" preserveRatio="true" rotate="90.0" visible="false">
+                     <image>
+                        <Image url="@../images/precedent.png" />
+                     </image>
+                  </ImageView>
+                  <JFXTextField fx:id="TTP1" editable="false" layoutX="50.0" layoutY="169.0" prefHeight="39.0" prefWidth="201.0" visible="false">
+                     <font>
+                        <Font name="Berlin Sans FB" size="21.0" />
+                     </font></JFXTextField>
+                  <JFXTextField fx:id="TTP2" editable="false" layoutX="52.0" layoutY="371.0" prefHeight="39.0" prefWidth="210.0" visible="false">
+                     <font>
+                        <Font name="Berlin Sans FB" size="21.0" />
+                     </font></JFXTextField>
+                  <JFXTextField fx:id="TTP3" editable="false" layoutX="52.0" layoutY="598.0" prefHeight="39.0" prefWidth="210.0" visible="false">
+                     <font>
+                        <Font name="Berlin Sans FB" size="21.0" />
+                     </font></JFXTextField>
+               </children>
+            </AnchorPane>
+            <JFXButton layoutX="1049.0" layoutY="528.0" onAction="#actualiser" prefHeight="39.0" prefWidth="126.0" style="-fx-background-color: #86c6ff;" text="Actualiser">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="dele" layoutX="1049.0" layoutY="427.0" onAction="#deletevariante" prefHeight="39.0" prefWidth="126.0" style="-fx-background-color: #F75D59;" text="Supprimer">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="100.0" fitWidth="175.0" layoutX="990.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/sc_fashion_logo_footer.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="811.0" layoutY="87.0" prefHeight="51.0" prefWidth="152.0" style="-fx-background-color: #e4efef;">
+         <children>
+            <Text layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des variantes ">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="649.0" layoutY="87.0" prefHeight="51.0" prefWidth="152.0" style="-fx-background-color: #e4efef;">
+         <children>
+            <Text layoutX="11.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des Gammes">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="489.0" layoutY="87.0" prefHeight="51.0" prefWidth="152.0" style="-fx-background-color: #e4efef;">
+         <children>
+            <Text layoutX="25.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des types">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="328.0" layoutY="87.0" prefHeight="51.0" prefWidth="152.0" style="-fx-background-color: #e4efef;">
+         <children>
+            <Text layoutX="9.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nouvelle variante">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="164.0" layoutY="87.0" prefHeight="51.0" prefWidth="152.0" style="-fx-background-color: #40e0d0;" styleClass="#e4efef">
+         <children>
+            <Text layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nouvelle Gamme">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="77.0" layoutY="87.0" onMouseClicked="#Home" prefHeight="51.0" prefWidth="78.0" style="-fx-background-color: #D98880;">
+         <children>
+            <Text layoutX="13.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Acceuil" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

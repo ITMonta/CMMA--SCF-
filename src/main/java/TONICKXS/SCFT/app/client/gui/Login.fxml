@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="448.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TONICKXS.SCFT.app.client.gui.LoginIn">
+   <children>
+      <ImageView fitHeight="663.0" fitWidth="555.0" layoutX="2.0" layoutY="2.0" opacity="0.56" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/1629896-le-defile-cruise-2017-de-gucci-se-deroul-950x0-3.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="47.0" layoutY="146.0" prefHeight="417.0" prefWidth="366.0">
+         <children>
+            <JFXTextField fx:id="Username" layoutX="77.0" layoutY="93.0" prefHeight="31.0" prefWidth="213.0" />
+            <JFXPasswordField fx:id="Passwd" layoutX="77.0" layoutY="198.0" prefHeight="31.0" prefWidth="213.0" />
+            <Text layoutX="81.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe" wrappingWidth="192.4189453125">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Text>
+            <Text layoutX="87.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom d'utilisateur" wrappingWidth="192.4189453125">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="logg" layoutX="71.0" layoutY="344.0" onAction="#DoLogin" prefHeight="43.0" prefWidth="213.0" style="-fx-background-color: #2E4053;" text="Login" textFill="#fcfcfc">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="71.0" fitWidth="182.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/sc_fashion_logo_footer.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="close" fitHeight="31.0" fitWidth="34.0" layoutX="398.0" layoutY="14.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/closewindow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="reduce" fitHeight="31.0" fitWidth="34.0" layoutX="359.0" layoutY="14.0" onMouseClicked="#reduce" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/download.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

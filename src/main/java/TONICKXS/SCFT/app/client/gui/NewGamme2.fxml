@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="parent" prefHeight="821.0" prefWidth="1789.0" style="-fx-background-color: FCFCE5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TONICKXS.SCFT.app.client.gui.newgamme2Controller">
+   <children>
+      <ImageView fitHeight="821.0" fitWidth="1201.0" opacity="0.69" pickOnBounds="true">
+         <image>
+            <Image url="@../images/clothes-hanging-background.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="138.0" prefHeight="683.0" prefWidth="1201.0" style="-fx-background-color: FCFCE5;">
+         <children>
+            <Rectangle fx:id="R22" arcHeight="5.0" arcWidth="5.0" fill="#ff1f20" height="153.0" layoutX="505.0" layoutY="216.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="175.0">
+               <effect>
+                  <Shadow color="#ff0011" height="160.94" radius="103.485" width="255.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="R21" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="153.0" layoutX="274.0" layoutY="216.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="175.0">
+              <effect>
+                  <Shadow color="#ff0011" height="160.94" radius="103.485" width="255.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="R24" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="153.0" layoutX="981.0" layoutY="216.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="175.0">
+              <effect>
+                  <Shadow color="#ff0011" height="160.94" radius="103.485" width="255.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="R23" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="153.0" layoutX="746.0" layoutY="216.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="175.0">
+              <effect>
+                  <Shadow color="#ff0011" height="160.94" radius="103.485" width="255.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="R34" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="153.0" layoutX="981.0" layoutY="396.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="175.0">
+              <effect>
+                  <Shadow color="#ff0011" height="160.94" radius="103.485" width="255.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="R33" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="153.0" layoutX="746.0" layoutY="396.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="175.0">
+              <effect>
+                  <Shadow color="#ff0011" height="160.94" radius="103.485" width="255.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="R31" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="153.0" layoutX="274.0" layoutY="396.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="175.0">
+              <effect>
+                  <Shadow color="#ff0011" height="160.94" radius="103.485" width="255.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="R32" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="153.0" layoutX="505.0" layoutY="396.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="175.0">
+              <effect>
+                  <Shadow color="#ff0011" height="160.94" radius="103.485" width="255.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="R12" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="153.0" layoutX="505.0" layoutY="32.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="175.0">
+              <effect>
+                  <Shadow color="#ff0011" height="160.94" radius="103.485" width="255.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="R13" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="153.0" layoutX="746.0" layoutY="32.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="175.0">
+              <effect>
+                  <Shadow color="#ff0011" height="160.94" radius="103.485" width="255.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="R14" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="153.0" layoutX="981.0" layoutY="32.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="175.0">
+              <effect>
+                  <Shadow color="#ff0011" height="160.94" radius="103.485" width="255.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="R11" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="153.0" layoutX="274.0" layoutY="32.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="175.0">
+              <effect>
+                  <Shadow color="#ff0011" height="160.94" radius="103.485" width="255.0" />
+               </effect>
+            </Rectangle>
+            <AnchorPane prefHeight="683.0" prefWidth="233.0" style="-fx-background-color: white;">
+               <children>
+                  <TableView fx:id="listeModules" layoutX="13.0" layoutY="109.0" prefHeight="479.0" prefWidth="208.0">
+                    <columns>
+                      <TableColumn fx:id="bommodule" prefWidth="206.0" text="Module" />
+                    </columns>
+                  </TableView>
+                  <Text layoutX="25.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des modules" wrappingWidth="183.6708984375">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Text>
+                  <JFXButton layoutX="54.0" layoutY="608.0" onAction="#selectModule" prefHeight="39.0" prefWidth="126.0" style="-fx-background-color: E2E283;" text="Select">
+                     <font>
+                        <Font name="Berlin Sans FB" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <ImageView fx:id="Vr11" fitHeight="139.0" fitWidth="175.0" layoutX="274.0" layoutY="39.0" onMouseClicked="#G11" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Vr12" fitHeight="139.0" fitWidth="175.0" layoutX="505.0" layoutY="39.0" onMouseClicked="#G12" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Vr13" fitHeight="139.0" fitWidth="175.0" layoutX="746.0" layoutY="39.0" onMouseClicked="#G13" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Vr14" fitHeight="139.0" fitWidth="175.0" layoutX="981.0" layoutY="39.0" onMouseClicked="#G14" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Vr24" fitHeight="139.0" fitWidth="175.0" layoutX="982.0" layoutY="223.0" onMouseClicked="#G24" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Vr23" fitHeight="139.0" fitWidth="175.0" layoutX="746.0" layoutY="223.0" onMouseClicked="#G23" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Vr22" fitHeight="139.0" fitWidth="175.0" layoutX="505.0" layoutY="223.0" onMouseClicked="#G22" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Vr21" fitHeight="139.0" fitWidth="175.0" layoutX="275.0" layoutY="223.0" onMouseClicked="#G21" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Vr41" fitHeight="139.0" fitWidth="175.0" layoutX="505.0" layoutY="513.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Vr42" fitHeight="139.0" fitWidth="175.0" layoutX="746.0" layoutY="513.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Vr34" fitHeight="139.0" fitWidth="175.0" layoutX="981.0" layoutY="403.0" onMouseClicked="#G34" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Vr33" fitHeight="139.0" fitWidth="175.0" layoutX="746.0" layoutY="403.0" onMouseClicked="#G33" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Vr32" fitHeight="139.0" fitWidth="175.0" layoutX="505.0" layoutY="403.0" onMouseClicked="#G32" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Vr31" fitHeight="139.0" fitWidth="175.0" layoutX="274.0" layoutY="403.0" onMouseClicked="#G31" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="prec" fitHeight="50.0" fitWidth="50.0" layoutX="312.0" layoutY="586.0" onMouseClicked="#Prec_Var" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/precedent.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="suiv" fitHeight="50.0" fitWidth="50.0" layoutX="1069.0" layoutY="586.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#Suiv_Var" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/precedent.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="622.0" layoutY="616.0" mnemonicParsing="false" onAction="#showotherwindow" prefHeight="39.0" prefWidth="175.0" style="-fx-background-color: E2E283;" text="Show">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Button>
+            <Text fx:id="TT11" layoutX="274.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T T :" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="TP11" layoutX="321.0" layoutY="178.0" prefHeight="39.0" prefWidth="126.0" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </JFXTextField>
+            <Text fx:id="TT12" layoutX="505.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T T :" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="TP12" layoutX="552.0" layoutY="178.0" prefHeight="39.0" prefWidth="126.0" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="TP13" layoutX="793.0" layoutY="178.0" prefHeight="39.0" prefWidth="126.0" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </JFXTextField>
+            <Text fx:id="TT13" layoutX="746.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T T :" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="TT14" layoutX="981.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T T :" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="TP14" layoutX="1028.0" layoutY="178.0" prefHeight="39.0" prefWidth="126.0" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </JFXTextField>
+            <Text fx:id="TT24" layoutX="982.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T T :" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="TP22" layoutX="553.0" layoutY="362.0" prefHeight="39.0" prefWidth="126.0" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </JFXTextField>
+            <Text fx:id="TT22" layoutX="506.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T T :" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="TT21" layoutX="275.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T T :" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="TP24" layoutX="1029.0" layoutY="362.0" prefHeight="39.0" prefWidth="126.0" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </JFXTextField>
+            <Text fx:id="TT23" layoutX="747.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T T :" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="TP21" layoutX="322.0" layoutY="362.0" prefHeight="39.0" prefWidth="126.0" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="TP23" layoutX="794.0" layoutY="362.0" prefHeight="39.0" prefWidth="126.0" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="TP33" layoutX="794.0" layoutY="542.0" prefHeight="39.0" prefWidth="126.0" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </JFXTextField>
+            <Text fx:id="TT33" layoutX="747.0" layoutY="573.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T T :" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="TT34" layoutX="982.0" layoutY="573.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T T :" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Text>
+            <Text fx:id="TT31" layoutX="275.0" layoutY="573.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T T :" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="TP31" layoutX="322.0" layoutY="542.0" prefHeight="39.0" prefWidth="126.0" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="TP34" layoutX="1029.0" layoutY="542.0" prefHeight="39.0" prefWidth="126.0" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </JFXTextField>
+            <Text fx:id="TT32" layoutX="506.0" layoutY="573.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T T :" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="TP32" layoutX="553.0" layoutY="542.0" prefHeight="39.0" prefWidth="126.0" visible="false">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="100.0" fitWidth="175.0" layoutX="990.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/sc_fashion_logo_footer.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="811.0" layoutY="87.0" prefHeight="51.0" prefWidth="152.0" style="-fx-background-color: #e4efef;">
+         <children>
+            <Text layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des variantes ">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="649.0" layoutY="87.0" prefHeight="51.0" prefWidth="152.0" style="-fx-background-color: #e4efef;">
+         <children>
+            <Text layoutX="11.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des Gammes">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="489.0" layoutY="87.0" prefHeight="51.0" prefWidth="152.0" style="-fx-background-color: #e4efef;">
+         <children>
+            <Text layoutX="25.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des types">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="328.0" layoutY="87.0" prefHeight="51.0" prefWidth="152.0" style="-fx-background-color: #e4efef;">
+         <children>
+            <Text layoutX="9.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nouvelle variante">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="164.0" layoutY="87.0" prefHeight="51.0" prefWidth="152.0" style="-fx-background-color: #40e0d0;" styleClass="#e4efef">
+         <children>
+            <Text layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nouvelle Gamme">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1205.0" layoutY="3.0" prefHeight="815.0" prefWidth="577.0" style="-fx-border-color: black;">
+         <children>
+            <AnchorPane layoutX="38.0" layoutY="19.0" prefHeight="62.0" prefWidth="515.0" style="-fx-background-color: #ff6666;">
+               <children>
+                  <Text fill="WHITE" layoutX="190.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" C.Design">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <ImageView fx:id="Pdfimagefile" fitHeight="660.0" fitWidth="497.0" layoutX="47.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="71.0" layoutY="87.0" onMouseClicked="#Home" prefHeight="51.0" prefWidth="78.0" style="-fx-background-color: #D98880;">
+         <children>
+            <Text layoutX="13.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Acceuil" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

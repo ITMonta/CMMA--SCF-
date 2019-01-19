@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="SCF" transaction-type="RESOURCE_LOCAL">
+	 <class>TONICKXS.SCFT.entities.Machine</class>
+	 <class>TONICKXS.SCFT.entities.Module</class>
+	 <class>TONICKXS.SCFT.entities.Operation</class>
+	 <class>TONICKXS.SCFT.entities.Type</class>
+	 <class>TONICKXS.SCFT.entities.User</class>
+	 <class>TONICKXS.SCFT.entities.Variante_Gamme</class>
+	 <class>TONICKXS.SCFT.entities.Gamme</class>
+	 <class>TONICKXS.SCFT.entities.Variante</class>
+	  <properties>
+            <!-- Configuring The Database Connection Details -->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/sctdb" />
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <property name="javax.persistence.jdbc.password" value="" /> 
+            <property name="java.persistance.jdbc.useSSL" value="false"/>         
+        </properties>
+	  
+	</persistence-unit>
+</persistence>

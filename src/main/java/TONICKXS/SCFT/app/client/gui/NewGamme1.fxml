@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="parent" prefHeight="821.0" prefWidth="1201.0" style="-fx-background-color: FCFCE5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TONICKXS.SCFT.app.client.gui.newgamme1Controller">
+   <children>
+      <ImageView fitHeight="388.0" fitWidth="1201.0" opacity="0.69" pickOnBounds="true">
+         <image>
+            <Image url="@../images/clothes-hanging-background.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="nom_article" layoutX="284.0" layoutY="447.0" prefHeight="34.0" prefWidth="227.0" />
+      <Text layoutX="44.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom de l'article :" wrappingWidth="194.6708984375">
+         <font>
+            <Font name="Berlin Sans FB" size="23.0" />
+         </font></Text>
+      <Text layoutX="44.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type de l'article :" wrappingWidth="194.6708984375">
+         <font>
+            <Font name="Berlin Sans FB" size="23.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="valider" disable="true" layoutX="143.0" layoutY="701.0" onAction="#validerGamme" prefHeight="59.0" prefWidth="283.0" style="-fx-background-color: E2E283;" text="Valider">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="272.0" fitWidth="438.0" layoutX="691.0" layoutY="432.0">
+         <image>
+            <Image url="@../images/skinny-shirt.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="143.0" layoutY="609.0" onAction="#downloadCD" prefHeight="59.0" prefWidth="283.0" style="-fx-background-color: E2E283;" text="Attacher C.D">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="type_article" layoutX="284.0" layoutY="513.0" prefHeight="31.0" prefWidth="227.0" />
+      <ImageView fitHeight="186.0" fitWidth="316.0" layoutX="797.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/sc_fashion_logo_footer.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="803.0" layoutY="337.0" onMouseClicked="#listvariante" prefHeight="51.0" prefWidth="152.0" style="-fx-background-color: #e4efef;">
+         <children>
+            <Text layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des variantes ">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="641.0" layoutY="337.0" onMouseClicked="#listgamme" prefHeight="51.0" prefWidth="152.0" style="-fx-background-color: #e4efef;">
+         <children>
+            <Text layoutX="11.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des Gammes">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="481.0" layoutY="337.0" onMouseClicked="#listtype" prefHeight="51.0" prefWidth="152.0" style="-fx-background-color: #e4efef;">
+         <children>
+            <Text layoutX="25.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des types">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="320.0" layoutY="337.0" onMouseClicked="#nvlvariante" prefHeight="51.0" prefWidth="152.0" style="-fx-background-color: #e4efef;">
+         <children>
+            <Text layoutX="9.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nouvelle variante">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="156.0" layoutY="337.0" prefHeight="51.0" prefWidth="152.0" style="-fx-background-color: #40e0d0;">
+         <children>
+            <Text layoutX="10.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nouvelle Gamme">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="close" fitHeight="31.0" fitWidth="34.0" layoutX="1156.0" layoutY="14.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/closewindow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="reduce" fitHeight="31.0" fitWidth="34.0" layoutX="1107.0" layoutY="14.0" onMouseClicked="#reduce" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/download.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="65.0" layoutY="337.0" onMouseClicked="#Home" prefHeight="51.0" prefWidth="78.0" style="-fx-background-color: #D98880;">
+         <children>
+            <Text layoutX="13.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Acceuil" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
