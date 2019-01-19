@@ -8,5 +8,5 @@ from the new variant layer.
 # the goal of this application 
  reduce the waste of time that employees 
  spend on paperwork (and also to reduce the risk of mistake ) 
-#technologies Used 
+# technologies Used 
 Java , JPA , JavaFX , MySOL Databases
